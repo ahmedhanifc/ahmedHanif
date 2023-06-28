@@ -22,7 +22,6 @@ header{
 }
 .sub-headings{
     margin-top:10px;
-    gap:20px;
 }
 .sub-headings>a{
     text-decoration: none;
