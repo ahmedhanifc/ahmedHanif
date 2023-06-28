@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    max-width: 960px;
+    margin:100px auto;
+    padding:10px;
+    grid-template-columns: repeat(3,1fr);
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap:10px;
+    
+}
+.items{
+background-color: steelblue;
+color:white;
+font-size:20px;
+padding:20px;
+border:skyblue 1px solid;
+}
+
+.items:nth-of-type(1){
+    background-color: black;
+    grid-column: 1/3;
+
+}
+
+.items:nth-of-type(3){
+    background-color: blueviolet;
+    grid-row: 2/4;
+}
+.items:nth-of-type(4){
+    background-color: violet;
+    grid-row: 2/4;
+}
