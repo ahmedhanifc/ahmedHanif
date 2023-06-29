@@ -18,15 +18,16 @@ header{
     margin:0 70px;
 }
 .title{
+    padding-top:10px;
+    padding-bottom:7px;
     font-size: 2.2rem;
 }
 .sub-headings{
-    margin-top:10px;
-    gap:20px;
+    display: flex;
+    padding-top:10px;
+    gap:50px;
 }
-.sub-headings>a{
-    text-decoration: none;
-}
+
 
 .container{
     padding-top: 30px;
