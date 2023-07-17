@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: #F6F6F6;
+
+}
+
+.form-container {
+
+  background-color: #fff;
+  padding:40px;
+}
+h2{
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Kanit', sans-serif;
+  margin-top:-15px;
+}
+.form-row{
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.13rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+footer{
+  padding:30px;
+}
+button{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.5rem;
+  padding: 20px 25px;
+  border-radius:10px;
+  border:1px transparent;
+  background-color: #36A939;
+  color:#fff
+}
+footer p {
+  padding:25px;
+}
+footer p span {
+  color:blue;
+  text-decoration: underline;
+}
+
+h2{
+  margin-bottom: 20px;
+}
+.container{
+  display: flex;
+}
+  img{
+  height: 100vh;
+}
+
+header{
+  margin: 0 auto;
+  width:80%;
+  padding-top:60px;
+  padding-bottom:60px;
+  font-size: 1.1rem;
+}
+
+header h1 {
+  text-align: center;
+}
+
+input{
+  width: 200px;
+  height:23px;
+  border:2px solid #D1D1D1;
+}
+
+input:user-invalid{
+  border: 2px solid red;
+}
+button:hover{
+  cursor: grab;
+  border:2px solid green
+}

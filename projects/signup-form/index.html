@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- A container: one container for the image, other for all the forms and stuff. The reason why i 
+        thought of doing this was that flexbox splits the thing in two, so it'll nicely align itself
+    on the two sides. Which it did -->
+    <div class="container">
+        <div class="container1">
+            <img src="Cat and Chiccy (2).png" alt="">
+        </div>
+        <div class="container2">
+            <header class = "speaker-form-header">
+                <p><em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cupiditate impedit aperiam ratione ipsam hic voluptas, natus rem. Aliquam ipsam pariatur vero quae labore suscipit? Iusto necessitatibus voluptatem aperiam vel.</em></p>
+            </header>
+            <form action="#">
+                <div class="form-container">
+                    <h2>Let's Do This</h2>
+                    <div class="form-row">
+                        <div class="item">
+                            <label for="first-name" id = "first-name">*First Name</label>
+                            <input type="text" id = "first-name" required pattern = "[a-zA-Z0-9]+"/>
+                        </div>
+                        <div class="item">
+                            <label for="last-name" id = "last-name">*Last Name</label>
+                            <input type="text" id = "last-name" required pattern = "[a-zA-Z0-9]+"/>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="item">
+                            <label for="email" id = "email">*Email</label>
+                            <input type="email" id = "email" placeholder = "example@example.com"required />
+                        </div>
+                        <div class="item">
+                            <label for="phone" id = "phone">Phone</label>
+                            <input type="tel" id = "phone"/>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="item">
+                            <label for="password" id = "password">*Password</label>
+                            <input type="password" id ='password' required pattern = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                        </div>
+                        <div class="item">
+                            <label for="password" id = "password">*Confirm Password</label>
+                            <input type="password" id ='password' required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                        </div>
+
+                    </div>
+                </div>
+                <footer>
+                    <button type="submit">Create Account</button>
+                    <p>Already Have an Account? <span>Login</span></p>
+                </footer>
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
