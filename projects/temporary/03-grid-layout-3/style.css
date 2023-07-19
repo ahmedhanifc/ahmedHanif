@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  background-color: #393f4d;
+}
+
+
+
+
+.menu ul,
+.menu li {
+  font-size: 16px;
+}
+
+.sidebar {
+  background-color: #C50208;
+}
+
+.sidebar .photo {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 10px;
+}
+
+
+.sidebar .side-content {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav {
+  background-color: #C50208;
+}
+
+.nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.article {
+  background-color: #bccbde;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #393f4d;
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* Solutions */
+
+.container{
+  display: grid;
+  grid-template-rows:0.3fr 0,2fr 1fr 0.3fr;
+  grid-template-columns: 0.3fr 1fr;
+  gap:3px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  grid-column:1 / -1 ;
+  grid-row:1 ;
+}
+
+
+.menu {
+  width:800px;
+}
+.menu > ul{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.menu > ul > li{
+  list-style: none  ;
+
+}
+
+
+/* ---------------------------------------------- */
+/* NavBar */
+.nav {
+  flex-direction: column;
+  grid-column: 2/3;
+}
+
+.nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nav > ul > li {
+  list-style: none;
+}
+@media only screen and (max-width: 600px) {
+  .nav > ul {
+    flex-direction: column;
+  }
+  .menu > ul {
+    flex-direction: column;
+  }
+}
+/* -------------------------------------- */
+
+/* Sidebar */
+.sidebar{
+  display: grid;
+  gap:5%;
+  grid-row: 2 / span 2;
+  grid-column: 1;
+}
+.photo , 
+.side-content {
+  height: clamp(5px,100px,200px);
+}
+
+.photo, .side-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------------------------------------------------ */
+.footer {
+  grid-row: 4;
+  grid-column: 1/-1;
+}
+
+/* Article */
+.article{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap:10px;
+}
+
+/* ---------------------------------------------------- */
