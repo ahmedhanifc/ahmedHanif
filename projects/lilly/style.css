@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin:0;
+    font-family: 'Titan One', 'Times New Roman', Times, serif;
+}
+.header-logo {
+    height: 36px;
+    margin-left: 24px;
+    border: 4px solid burlywood;
+    border-radius: 50%;
+    box-shadow: 1px 1px;
+    transition: all 2.0s;
+}
+.navbar {
+    background: #FF6000;
+    display: flex;
+    padding:25px;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    gap:20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left:auto;
+    margin-right:12px;
+}
+
+.title-container {
+    display: flex;
+    height: 60vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black 1px;
+    background-image: linear-gradient(
+      60deg,
+      rgba(57, 60, 90, 0.85),
+      rgba(180, 180, 120, 0.5)
+    ),
+    url(https://wallpaperforu.com/wp-content/uploads/2023/04/Pixar-Download-Best-Hd-Wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-img {
+    object-fit: cover;
+    flex: 1 1 auto;
+    max-width: 100px;
+    border: 15px solid burlywood;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px;
+}
+
+.media-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 128px 72px 72px;
+    gap: 24px;
+    padding: 32px;
+    border: 3px solid skyblue;
+    border-radius: 200px;
+    box-shadow: 2px 2px 20px 2px;
+    background: rgba(57, 60, 90, 0.7);
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 32px;
+}
+
+button {
+    font-weight: 900;
+    padding: 4px 24px;
+    border-radius: 4px;
+    background-color: rgb(230, 250, 250);
+    align-self: center;
+}
+.menace {
+    color:white;
+    text-align: center;
+    padding: 48px;
+    padding-top: 60px;
+    border-top: 1px solid black;
+    background: #deb887;
+}
+
+.working-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 0px 24px 96px 24px;
+    background: #deb887;
+}
+
+.worker-icon {
+    width: 150px;
+    height: 150px;
+    border: 12px solid rgb(230, 250, 250);
+    border-radius: 32px;
+    box-shadow: 2px 2px 3px black;
+    object-fit: cover;
+}
